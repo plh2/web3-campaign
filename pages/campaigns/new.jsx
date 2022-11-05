@@ -28,7 +28,7 @@ export default function NewCampaign() {
     return (
         <Layout>
             <h3>Create a Campaign</h3>
-            <Form onSubmit={e => preventDefault(e, handleCreateCampaign)} error={!!error}>
+            <Form onSubmit={handleCreateCampaign} error={!!error}>
                 <Form.Field>
                     <label>Minimum Contribution</label>
                     <Input
@@ -47,7 +47,7 @@ export default function NewCampaign() {
                     </Message>
                 )}
                 <Button loading={loading} primary>
-                    Create
+                    Create1
                 </Button>
             </Form>
         </Layout>
