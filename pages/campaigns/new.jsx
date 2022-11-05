@@ -10,6 +10,7 @@ export default function NewCampaign() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const handleCreateCampaign = async (e) => {
+        e.preventDefault();
         if (!minAmount) return;
         const accounts = await web3.eth.getAccounts();
         try {
