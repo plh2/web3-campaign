@@ -48,7 +48,7 @@ export default function NewCampaign() {
                     </Message>
                 )}
                 <Button loading={loading} primary>
-                    Create1
+                    Create
                 </Button>
             </Form>
         </Layout>
