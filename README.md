@@ -18,7 +18,8 @@ node ./ethereum/compile.js && npx rimraf .env && KEY=YOUR_KEY node ./ethereum/de
 node ./ethereum/compile.js                        # compile solidity
 npx rimraf .env                                   # remove .env file
 KEY="YOUR_KEY" node ./ethereum/deploy.js >> .env  # deploy solidity to online eth chain and get the online contract address and wirte down it into .env file.
-yarn dev                                          # run the next-reactjs web app
+yarn dev                                          # dev the next-reactjs web app
+yarn build && yarn start                          # build and deploy the web app
 ```
 
 ## Preparation
