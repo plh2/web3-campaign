@@ -1,5 +1,7 @@
 # Web3 project
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6704c51-7e81-40be-a171-7b338b183f14/deploy-status)](https://app.netlify.com/sites/delightful-valkyrie-f13641/deploys)
+
 ## TIP
 
 web3 not work with next@13, pls use next@12.
@@ -15,7 +17,7 @@ node ./ethereum/compile.js && npx rimraf .env && KEY=YOUR_KEY node ./ethereum/de
 ```sh
 node ./ethereum/compile.js                        # compile solidity
 npx rimraf .env                                   # remove .env file
-KEY="YOUR_KEY" node ./ethereum/deploy.js >> .env  # deploy solidity to online eth chain and get the online contract address and wirte down it into .env file. 
+KEY="YOUR_KEY" node ./ethereum/deploy.js >> .env  # deploy solidity to online eth chain and get the online contract address and wirte down it into .env file.
 yarn dev                                          # run the next-reactjs web app
 ```
 
@@ -26,8 +28,8 @@ yarn dev                                          # run the next-reactjs web app
 2. This contract will deploy into **Sepolia network**, pls make sure you are already select Sepolia network.
 
     ![network-select](./public/network-select.png)
-    
-3. connect this website 
+
+3. connect this website
 
     ![image](https://user-images.githubusercontent.com/14355994/200105268-62747961-914b-4915-9151-0a9ed1a2229b.png)
 
