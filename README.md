@@ -26,5 +26,9 @@ yarn dev                                          # run the next-reactjs web app
 2. This contract will deploy into **Sepolia network**, pls make sure you are already select Sepolia network.
 
     ![network-select](./public/network-select.png)
+    
+3. connect this website 
 
-3. your metamask 12 word phrase
+    ![image](https://user-images.githubusercontent.com/14355994/200105268-62747961-914b-4915-9151-0a9ed1a2229b.png)
+
+4. Prepare your metamask 12 word phrase
