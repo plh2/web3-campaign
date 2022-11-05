@@ -3,15 +3,14 @@ import { Input, Button, Form, Message } from "semantic-ui-react";
 import Layout from "../../components/Layout";
 import factory from "../../ethereum/factory";
 import web3 from "../../ethereum/web3";
-import router from "next/router";
+import { preventDefault } from "../../utils";
 
 export default function NewCampaign() {
     const [minAmount, setMinAmount] = useState("");
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
-    async function handleCreateCampaign(e) {
+    const handleCreateCampaign = async (e) => {
         if (!minAmount) return;
-        e.preventDefault();
         const accounts = await web3.eth.getAccounts();
         try {
             setLoading(true);
@@ -29,7 +28,7 @@ export default function NewCampaign() {
     return (
         <Layout>
             <h3>Create a Campaign</h3>
-            <Form onSubmit={handleCreateCampaign} error={!!error}>
+            <Form onSubmit={e => preventDefault(e, handleCreateCampaign)} error={!!error}>
                 <Form.Field>
                     <label>Minimum Contribution</label>
                     <Input

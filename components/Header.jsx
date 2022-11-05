@@ -7,15 +7,21 @@ export default function Header(props) {
     return (
         <Menu style={{ marginTop: "30px" }}>
             <Menu.Item>
-                <Link href="/">CrowdCoin</Link>
+                <Link href="/">
+                    <a>CrowdCoin</a>
+                </Link>
             </Menu.Item>
             <Menu.Menu position="right">
                 <Menu.Item>
-                    <Link href="/campaigns">Campaigns</Link>
+                    <Link href="/">
+                        <a>Campaigns</a>
+                    </Link>
                 </Menu.Item>
                 <Menu.Item>
-                <Link href="/campaigns/new">+</Link>
-                  </Menu.Item>
+                    <Link href="/campaigns/new">
+                        <a>+</a>
+                    </Link>
+                </Menu.Item>
             </Menu.Menu>
         </Menu>
     );

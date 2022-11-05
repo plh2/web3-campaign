@@ -56,15 +56,17 @@ export default function Index() {
                     <CardList />
                 </div>
                 <Link href="/campaigns/new">
-                    <Button
-                        style={{ width: "200px" }}
-                        icon
-                        labelPosition="left"
-                        primary
-                    >
-                        <Icon name="add circle" />
-                        <span>Create Campaign</span>
-                    </Button>
+                    <a>
+                        <Button
+                            style={{ width: "200px" }}
+                            icon
+                            labelPosition="left"
+                            primary
+                        >
+                            <Icon name="add circle" />
+                            <span>Create Campaign</span>
+                        </Button>
+                    </a>
                 </Link>
             </div>
         </Layout>
